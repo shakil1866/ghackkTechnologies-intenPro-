@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+.container {
+    padding: 10px 30px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 54px;
+}
+nav {
+  
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004274;
+    position: relative;
+    height: 70px;
+    
+}
+
+.logo {
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+/*================== hero =========================*/
+.background {
+    height: calc(100vh - 71px);
+    background: rgba(0, 0, 0, 0.7)url("stadium.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  
+   
+    display: inline-block;
+}
+
+.text-container .text {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18),
+        cursor .4s step-end infinite alternate;
+
+          font-size: 48px;
+           font-weight: bold;
+           padding-bottom: 20px;
+}
+
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+}
+/* carecter */
+
+#characterContainer {
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4.8rem;
+      
+        & .information {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 1rem;
+        }
+      margin-bottom: 70px;
+}
+.cards{
+    display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.5rem;
+
+  padding: 1.6rem;  
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  border-radius: 0.3rem;
+}
+
+.card-name1 h3{
+    font-size:30px;
+    padding: 10px 0px;
+}
+
+.card-des{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.card-img {
+    object-fit: contain;
+    width: 100%;
+   height: 100%; 
+}
+.card-btn {
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    font-weight: 500;
+    color: white;
+}
+/* call to action */
+.background1{
+    height: 300px;
+    background:rgb(103, 152, 168) ;
+    background-image: url("./image/backgound1.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background1 button {
+    font-size: large;
+    padding: 30px;
+    border-radius:50px;
+   /* position: relative;
+   top: 50%;
+   left:49%; */
+   /* transition: (50, -50); */
+
+   border: none;
+   color: white;
+   background-color: blue;
+
+}
+
+/* owl */
+.owl-carousel span{
+    display: none;
+}
+.owl-carousel .item {
+height: 300px;
+}
+.owl-carousel img{
+    height: 100%;
+}
+/* footer */
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 2rem 0; 
+}
+
+
+.logo h1 {
+    margin: 0; 
+    font-size: 2rem; 
+}
+
+#menuList1 {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+#menuList1 li {
+    margin: 0 1rem; 
+}
+
+#menuList1 a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+.social-media {
+    margin-top: 1rem; 
+}
+
+.social-media a {
+    color: white;
+    margin: 0 0.5rem; 
+    font-size: 1.5rem;
+}
+
+.footer-last{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background-color:#706f6f;
+}
